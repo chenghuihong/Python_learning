@@ -34,7 +34,7 @@ for i in range(99):
     star.sety(ra.randint(-int_height, int_height))
     star.showturtle()
     stars.append(star)
-# 浪漫星空，循环，
+# 浪漫星空，循环，当每个星球从左边消失时，我们将它重新加入右侧，继续循环
 while True:
     for star in stars:
         star.setx(star.xcor()-star.speed())
